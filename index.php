@@ -17,9 +17,17 @@
 			<meta name="revisit-after" content="7 Days" />
 	    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		  <link rel="icon" href="favicon.ico" type="image/x-icon">
+	    <link rel="stylesheet" type="text/css" href="css/timer.css">
   </head>
   <body>
-    <div id="timeDisplay">00:00</div>
+    <div>
+      <input type="radio" id="easy" name="defaultTime" value="Easy" checked=true>
+      <label for="easy">Easy</label>
+      <input type="radio" id="hard" name="defaultTime" value="Hard">
+      <label for="hard">Hard</label>
+      <button id="applyDefaultTime" onclick="applyDefault()">Apply</button>
+    </div><br />
+    <div id="timeDisplay">00:00</div><br />
     <div>
       <button id="startingPistol">Start</button>
       <button id="reset">Reset</button>
