@@ -21,7 +21,7 @@
   </head>
   <body>
     <div>
-      <input type="radio" id="easy" name="defaultTime" value="Easy" checked=true>
+      <input type="radio" id="easy" name="defaultTime" value="Easy" checked="true">
       <label for="easy">Easy</label>
       <input type="radio" id="hard" name="defaultTime" value="Hard">
       <label for="hard">Hard</label>

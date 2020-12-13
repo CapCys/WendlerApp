@@ -43,20 +43,18 @@ function stopTimer(isRunning, button, buttonText){
       stopTimer(isRunning, startButton, "Resume");
       isRunning = -1;
     }
-  })
+  });
   
   resetButton.addEventListener("click", function(event){
     stopTimer(isRunning, startButton, "Start");
     isRunning = -1;
     time = setTime();
     updateClock(time);
-  })
-  ;
+  });
 
   function applyDefault() {
 
     time = setTime();
-    alert(time);
     updateClock(time);
   }
 
