@@ -26,7 +26,9 @@ function stopTimer(isRunning, button, buttonText){
   
   var startButton = document.getElementById("startingPistol");
   var resetButton = document.getElementById("reset");
-  var time = 122;
+  var min = document.getElementById("inputMinutes");
+  var sec = document.getElementById("inputSeconds");
+  var time = 0;
   var isRunning = -1;
   updateClock(time);
   
@@ -46,7 +48,26 @@ function stopTimer(isRunning, button, buttonText){
   resetButton.addEventListener("click", function(event){
     stopTimer(isRunning, startButton, "Start");
     isRunning = -1;
-    time = 122;
+    time = setTime();
     updateClock(time);
   })
   ;
+
+  function applyDefault() {
+
+    time = setTime();
+    alert(time);
+    updateClock(time);
+  }
+
+  function setTime() {
+    var hard = document.getElementById("hard");
+    var min = 1;
+    var sec = 30;
+  
+    if (hard.checked == true) {
+      min = 3;
+      sec = 0;
+    }
+    return Math.floor((min * 60) + sec);
+  }
