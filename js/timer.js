@@ -34,6 +34,7 @@ function stopTimer(isRunning, button, buttonText){
   
   startButton.addEventListener("click", function(event){
     if(isRunning == -1){
+      applyDefault();
       isRunning = setInterval(function(){
         time--;
         updateClock(time);
