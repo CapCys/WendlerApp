@@ -16,51 +16,11 @@
   <meta name="author" content="CapCys Web Development" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/site.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-  body {
-    font: 20px Montserrat, sans-serif;
-    line-height: 1.8;
-    color: #f5f6f7;
-    background-color: #f5f6f7;
-  }
-  p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
-  .bg-1 { 
-    background-color: #337ab7; /* Green #1abc9c*/
-    color: #ffffff;
-  }
-  .bg-2 {
-    color: #f5f6f7;
-  }
-  .footer-copyright {
-    color:#337ab7;
-    background-color: #f5f6f7;
-  }
-  .list-group-item {
-    background-color: #337ab7;
-    border: #337ab7;
-  }
-  .container-fluid {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-  .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
-  }
-  .navbar-nav  li a:hover {
-    color: #1abc9c !important;
-  }
-  </style>
 </head>
 <body>
 
@@ -76,8 +36,8 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="dashboard.php">Dashboard</a></li>
+        <li><a href="index.php">Home</a></li>
+        <li class="active"><a href="dashboard.php">Dashboard</a></li>
         <!-- <li><a href="workoutStep.php">Workout</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">Contact</a></li>
@@ -88,21 +48,55 @@
     </div>
   </div>
 </nav>
-
-<!-- First Container -->
-<div class="container-fluid bg-1">
-  <div class="col-sm-6 text-center">
-    <h3 class="margin">Who Am I?</h3>
-    <img src="images/canoelogo.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Portage Man" width="150" height="150">
-  </div>
-  <div class="col-sm-6 text-center">
-    <ul class="list-group">
-      <li class="list-group-item bg-1">He/Him/His</li>
-      <li class="list-group-item bg-1">Outdoor Enthusiast</li>
-      <li class="list-group-item bg-1">Strong Curiosity</li>
-      <li class="list-group-item bg-1">Foodie</li>
-      <li class="list-group-item bg-1">Software Developer</li>
-    </ul>
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-12">
+      <div class="well text-center">
+        <h3>Dashboard</h3>
+        <p>What am I tracking</p>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="well">
+            <p class="text-center">Weight Loss Goal</p><br />
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                    70%
+                </div>
+            </div>
+            <div class="text-center">
+              <h6>GOAL: 84 Pounds</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="well">
+            <p class="text-center">2021 Reading Goal</p><br />
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width:5%">
+                    5%
+                </div>
+            </div>
+            <div class="text-center">
+              <h6>GOAL: 26 Books</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="well">
+            <p class="text-center">2021 Walking Goal</p><br />
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width:15%">
+                    15%
+                </div>
+            </div>
+            <div class="text-center">
+              <h6>GOAL: 1,000 Miles</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
